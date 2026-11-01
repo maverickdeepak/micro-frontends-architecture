@@ -7,7 +7,7 @@
   ],
   "packageManager": "npm@11.8.0",
   "scripts": {
-    "dev": "turbo dev --filter=@commerceos/api --filter=@commerceos/app-shell",
+    "dev": "turbo dev --filter=@commerceos/api --filter=@commerceos/app-shell --filter=@commerceos/analytics",
     "build": "turbo build",
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
@@ -16,5 +16,8 @@
   },
   "devDependencies": {
     "turbo": "^2.9.12"
+  },
+  "dependencies": {
+    "@module-federation/runtime-tools": "^2.9.2"
   }
 }
